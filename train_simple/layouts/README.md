@@ -1,5 +1,0 @@
-The CSS box model describes the rectangular boxes that are generated for elements. Understanding it's properties and how they interact with other elements on the page are critical when creating layouts.
-
-The course reviews the 5 main properties of the box model, and what they do to the elements size.
-
-Also covered, is how to work with the background property, to set color and background images.
