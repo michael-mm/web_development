@@ -1,0 +1,1 @@
+Continuous learning from web development & design courses, tutorials and training from various online learning tool resources: Train Simple, Lynda.com, Pluralsight, Tuts+, Treehouse, Code School and many more!!
