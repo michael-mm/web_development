@@ -1,0 +1,1 @@
+ Use of Smart Objects in speeding up design and production time. Creating Smart Objects from layers in a Photoshop file or from JPG files, or cut and paste from Illustrator. Further exploration in combining, editing Smart Objects with layer effects and clipping masks, to increase the efficiency of the design process in Photoshop.
