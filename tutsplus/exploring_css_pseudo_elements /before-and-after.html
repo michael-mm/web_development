@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>::before and ::after</title>
+    
+        <style>
+            html, body { font-family: Helvetica; font-size: 1.2em; color: #444; }
+            
+            .bubble {
+                color: white;
+                background-color: #777;
+                background-image: linear-gradient(0deg, #777, #aaa);
+                padding: 60px;
+                width: 200px;
+                margin: 0 auto;
+                text-align: center;
+                border-radius: 40px;
+                position: relative;
+
+            }
+            
+            .bubble::before {
+                content: "";
+                width: 60px;
+                height: 60px;
+                background-color: #777;
+                border-radius: 100px;
+                position: absolute;
+                bottom: -30px;
+                left: 40px;
+                z-index: -5;
+            }
+            
+            .bubble::after {
+                content: "";
+                width: 60px;
+                height: 60px;
+                background-color: white;
+                border-radius: 100px;
+                position: absolute;
+                bottom: -40px;
+                left: 60px;
+                z-index: -5;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="bubble">Speech Bubbles</div>
+    </body>
+</html>

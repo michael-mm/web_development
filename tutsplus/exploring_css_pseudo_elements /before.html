@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>::before</title>
+    
+        <style>
+            html, body { font-family: sans-serif; color: #444; }
+
+            h1::before {
+                content: " ";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-radius: 100px;
+                background-color: red;
+                margin-right: 10px;
+            }
+
+            ul.prices li::before {
+                content: "$";
+                font-weight: bolder;
+                color: green;
+                margin-right: 10px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1>The ::before Pseudo Element</h1>
+        <h3>Our Prices</h3>
+        <ul class="prices">
+            <li>23.98</li>
+            <li>40.55</li>
+            <li>50.00</li>
+            <li>75.99</li>
+        </ul>
+    </body>
+</html>

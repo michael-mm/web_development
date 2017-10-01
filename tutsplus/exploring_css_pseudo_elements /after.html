@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>::after</title>
+    
+        <style>
+            html, body { font-family: sans-serif; font-size: 1.2em; color: #444; }
+
+            ul.todo li.checked::after {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-image: url("check.png");
+                margin: 3px 0 0 10px; 
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1>The ::after Pseudo Element</h1>
+        <h3>To-Do List</h3>
+        <ul class="todo">
+            <li>Wash the car</li>
+            <li class="checked">Learn about Pseudo Elements</li>
+            <li class="checked">Play video Games</li>
+            <li>Buy groceries</li>
+        </ul>
+    </body>
+</html>
