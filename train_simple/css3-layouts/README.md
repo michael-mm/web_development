@@ -1,0 +1,1 @@
+The CSS3 Layouts Course covers basic layout principles by examining crucial page layout skills such as floats and positioning. Further techniques are explored to create fixed, fluid, and responsive layouts with CSS.
