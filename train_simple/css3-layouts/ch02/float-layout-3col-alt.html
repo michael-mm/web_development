@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Float-Based Layouts 3 Column</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #003300;
+}
+body {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+}
+header {
+	background: #000;
+	margin-bottom: 10px;
+}
+header h1 {
+	font: normal 2em Arial, Helvetica, sans-serif;
+	color: white;
+	text-align: center;
+	line-height: 4em;
+	text-transform: capitalize;
+	margin: 0;
+}
+.column1 {
+	background: #7E827A;
+	height: 500px;
+	line-height: 4em;
+	float: left;
+	padding: 10px;
+	width: 293.3px;
+}
+.column2 {
+	background: #2F343B;
+	height: 500px;
+	line-height: 4em;
+	float: right;
+	padding: 10px;
+	width: 293.3px;
+}
+.column3 {
+	background: #4F483E;
+	height: 500px;
+	line-height: 4em;
+	width: 293.3px;
+	padding: 10px;
+	margin: 0 auto;
+}
+footer {
+	background: #000;
+	line-height: 4em;
+	font-size: .8em;
+	color: white;
+	padding: 0 2em;
+	clear: both;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>British Sports Cars</h1>
+</header>
+<section class="column1">
+Left Column
+</section>
+<section class="column2">
+Right Column
+</section>
+<section class="column3">
+Middle Column
+</section>
+<footer>Footer Information</footer>
+</body>
+</html>

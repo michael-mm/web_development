@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Avoid Container Collapse</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #C77966;
+}
+body {
+	width: 650px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	font: 90% Arial, sans-serif;
+}
+section {
+	background: #E3CDA4;
+	border: 1px solid black;
+	padding: 15px;
+	width: 500px;
+	float: left;
+}
+div {
+	width: 40px;
+	height: 40px;
+	padding: 35px;
+}
+.one {
+ background: #703030;
+ float: left;
+}
+.two {
+ background: #7E827A;
+ float: left;
+}
+.three {
+ background: #2F343B;
+ float: left;
+}
+
+	
+</style>
+</head>
+<body>
+<section>
+<div class="one">Box One</div>
+<div class="two">Box Two</div>
+<div class="three">Box Three</div>
+
+</section>
+</body>
+</html>

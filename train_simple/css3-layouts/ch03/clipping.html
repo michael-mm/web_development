@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Working with the Clip Property</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #CCC;
+}
+body {
+	width: 700px;
+	background: #FFF;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+	position:relative;
+}
+.container {
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	clip: rect(0px,226px,335px,30px );
+}
+</style>
+</head>
+<body>
+<h1>Clip property</h1>
+<div class="container">
+<img src="images/car.png" height="365" width="256" alt="Bentley">
+</div>
+</body>
+</html>

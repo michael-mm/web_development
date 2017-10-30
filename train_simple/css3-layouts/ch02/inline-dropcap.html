@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Floating Inline Elements</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+h1, h2, h3, h4, p, ul, li, address, blockquote {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #003300;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 700px;
+	margin: 0 auto;
+	font: 90%/1.6 Arial, Helvetica, sans-serif;
+	background: #fff;
+	padding: 25px;
+}
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+article {
+	clear: both;
+}
+header h1 {
+	font-size: 3em;
+	text-transform: capitalize;
+	margin-bottom: 0;
+	font-weight: normal;
+	line-height: 1.2;
+}
+article h1, article h2, article h3, article h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+article h1{
+	font-size: 2.8em;
+	margin: 1em 0 .6em;
+}
+article h2 {
+	font-size: 1.8em;
+	margin: 1em 0 .4em;
+}
+article h3 {
+	font-size: 1.4em;
+	margin: 1.2em 0 .2em;
+}
+article p {
+	margin-bottom: 1em;
+}
+
+.wrap img{
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+.wrap h3{
+	clear:both;
+}
+.dropcap p:first-of-type:first-letter{
+	float: left;
+	font-family: Times, serif;
+	font-size: 4em;
+	margin: 0 5px 0 0;
+	line-height: .7;
+}
+
+</style>
+</head>
+<body>
+<header>
+<h1>British Sports Cars</h1>
+</header>
+<article>
+<h2>1933 MG J2</h2>
+<section class="wrap">
+<p><img src="images/car.png" width="246" height="365" alt="Bentley">The MG J-type was produced by the MG Car company from 1932 to 1934. This 2-door sports car used an updated version of the overhead camshaft, crossflow engine, used in the 1928 Morris Minor and Wolseley.
+</p>
+<p>The chassis was from the D-Type with suspension by half-elliptic springs and Hartford friction shock absorbers all round with rigid front and rear axles. The car had a wheelbase of 86 inches (2184 mm) and a track of 42 inches (1067 mm). Most cars were open two-seaters, but a closed salonette version of the J1 was also made, and some chassis were supplied to external coachbuilders. The open cars can be distinguished from the M type by having cut-away tops to the doors.
+</p>
+<h3>The J2 was the commonest car in the range.</h3>
+<p>Early cars had cycle wings, but these were replaced in 1933 by the full-length type that was typical of all sports MGs until the 1950s TF. The top speed of a standard car was 65 mph (105 km/h),but a specially prepared one tested by The Autocar magazine reached 82 mph (132 km/h). The car cost £199. There were a few serious failings of the J2, most seriously that it only had a two-bearing crank shaft which can break if over-revved.
+</p>
+</section>
+<section class="dropcap">
+<p>Another problem is that it is not fitted with hydraulic brakes, but has Bowden cables to each drum. These require no more pedal force than any other non-power-assisted drum brake, provided that they are well maintained. The drums themselves are small and even in period it was a common modification to replaced them with larger drums from later models.
+The non-synchromesh gearbox takes some getting used to, as for any car of this period, but with its short gear stick it becomes second nature to double de-clutch and rare to grind the gears.
+</p>
+</section>
+</article>
+</body>
+</html>
