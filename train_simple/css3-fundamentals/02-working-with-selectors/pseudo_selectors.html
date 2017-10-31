@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Working with Pseudo Selectors</title>
+		<style>
+			body{
+				font-family:Arial;
+				margin: 50px 0 0 20px;
+			}
+			ul{
+				list-style: none;
+				margin: 0 0 25px;
+			}
+			.space{
+				margin-top: 250px;
+			}
+			a:link{
+				background: blue;
+				color: white;
+				display: block;
+				padding: 5px 10px;
+				text-align: center;
+				text-transform: uppercase;
+				margin-bottom: 2px;
+				text-decoration: none;
+			}
+			a:visited{
+				color: black;
+			}
+			a:hover{
+				background: grey;
+			}
+			a:active{
+				background: yellow;
+			}
+			a:target{
+				color: green;
+			}
+	
+		</style>
+	</head>
+
+	<body>
+	  <ul>
+	  	<li><a href="about.html">About</a></li>
+	  	<li><a href="contact.html">Contact</a></li>
+	  	<li><a href="locations.html">Locations</a></li>
+	  	<li><a href="news.html">News</a></li>
+	  </ul>
+	  
+	  
+	  <div class="space">
+	  <p><a id="newSection">New Section</a></p>
+	  </div>
+	</body>
+</html>

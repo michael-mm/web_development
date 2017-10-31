@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Working with Attribute Selectors</title>
+		<style>
+		a{
+			text-decoration: none;
+			color:black;
+		}
+		a[title="Adobe and HTML training"] {
+			color: blue;
+		}
+
+		p[class~="blue"] {
+			color: blue;
+		}
+		a[title*="Page"] {
+			color: red;
+		}
+
+		
+		</style>
+	</head>
+
+	<body>
+		<p class="highlight blue">This is a paragraph being controlled by a CSS class selector</p>
+		<p class="blue">This is a paragraph being controlled by a CSS class selector</p>
+		<p class="highlight info blue">This is a paragraph being controlled by a CSS class selector</p>
+		<p>This is a paragraph being controlled by a CSS class selector</p>
+		<br>
+		<ul>
+			<li><a href="http://www.trainsimple.com" title="Adobe and HTML training">Link 1</a></li>
+			<li><a href="http://www.w3.org" title="W3C's Page">Link 2</a></li>
+			<li><a href="universal.html" title="Our Universal Page">Link 3</a></li>
+			<li><a href="book.pdf" title="Download our book">Link 3</a></li>
+		</ul>
+	</body>
+</html>
