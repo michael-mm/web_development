@@ -1,0 +1,1 @@
+Javascript Fundamentals I teaches the basics of the syntax, how to declare variables, write functions, and looping statements.
