@@ -1,0 +1,1 @@
+The Bootstrap 4 Essential Course covers topics that include: Creating a basic template, Basic styles and typography, Using Colors, Working with classes that help you deal with images, Grid containers, Offsetting columns, Using list groups, breadcrumbs, Layout components, Form styles and Working with interactive components
