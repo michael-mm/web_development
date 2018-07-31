@@ -1,0 +1,1 @@
+The jQuery Essential Training covers what jQuery is, Using selectors and filters to extract information, Creating, inserting and animating page content, Handling events, Understanding jQuery statement chaining, Working with CSS, Building event handlers, Animating with jQuery(showing, hiding and fading page elements) and Working with AJAX.
