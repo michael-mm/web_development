@@ -1,1 +1,1 @@
-Train Simple Course work and Training 
+Train Simple Training and Course work 
