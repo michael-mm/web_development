@@ -1,0 +1,1 @@
+The course teaches basic real-world uses for JavaScript such as creating forms and form fields, reading data, checking input for errors, and performing calculations. It further explores how to use JavaScript time and date functions to create features like calendars and countdown clocks, and add interactive content through APIs like Google Maps.
