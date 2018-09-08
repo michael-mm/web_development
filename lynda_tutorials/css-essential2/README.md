@@ -1,0 +1,1 @@
+CSS Essential Training 2 covers topics that review CSS syntax, simple selectors to advanced selectors, when to use the float, display, and position properties, and how to get started with the CSS browser developer tools and leverage them when debugging your front-end code. Further explanation on the mobile-first approach for responsive web design is done.
