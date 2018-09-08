@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Essentials 2</title>
+
+    <style >
+    /*root element*/
+      html {
+        background: black;
+      }
+    /*viewport*/
+      body {
+        background: white;
+      }
+      .block1 {
+        /*display: none;*/
+        background: pink;
+        position: relative;
+        z-index: 100;
+      }
+      .block2 {
+        /*display: none;*/
+        background: red;
+        margin: - 60px 0 0 20px;
+        /*position: relative;*/
+        /*z-index: 200;*/
+      }
+      .float {
+        /*display: none;*/
+        background: lightblue;
+        float: left;
+        margin: -150px 0 0 100px;
+      }
+      .inline {
+        /*display: none;*/
+        background: blue;
+        color: white;
+        padding-top: 10px 40px 10px 10px;
+      }
+      .position {
+        /*display: none;*/
+        background: orange;
+        position: relative;
+        left: 180px;
+        top: -165px;
+        height: 110px;
+      }
+      /*shared div styles*/
+      div {
+        width: 300px;
+        height: 150px;
+      }
+      
+    </style>
+
+</head>
+<body>
+  
+  <p>body content</p>
+  <div class="block1">block 1</div>
+  <div class="block2">block 2</div>    
+  <div class="float">
+    <p>float</p>
+    <span class="inline">inline</span>
+  </div>
+  <div class="position">position</div>
+
+</body>
+</html>

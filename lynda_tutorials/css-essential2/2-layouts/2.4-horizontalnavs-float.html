@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Essentials 2</title>
+
+    <style>
+    /* General styles*/
+     html {
+      box-sizing: border-box;
+     } 
+     *, *:before, *:after {
+      box-sizing: inherit;
+     }
+     nav { 
+      background: purple;
+      margin-bottom: 5px; 
+     }
+     a {
+      background: lightblue;
+     }
+
+     .display {
+      text-align: center;
+      font-size: 0;
+     }
+
+     .display a {
+      padding: 10px;
+      display: inline-block;
+      width: 25%;
+      font-size: 16px;
+      /*margin-left: -1%;*/
+     }
+     
+     .float {
+      overflow: hidden;
+      text-align: center;
+     }
+
+/*     .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+     }*/
+
+     .float a {
+        float: left;
+        padding: 10px;
+        width: 25%;
+     }
+      
+    </style>
+
+</head>
+<body>
+  <h1>Horizontal Navs with the Float Property</h1>
+  <nav class="display">
+    <a href="#">About</a>
+    <a href="#">Work</a>
+    <a href="#">Education</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <nav class="float clearfix">
+    <a href="#">About</a>
+    <a href="#">Work</a>
+    <a href="#">Education</a>
+    <a href="#">Contact</a>
+  </nav>
+
+</body>
+</html>
