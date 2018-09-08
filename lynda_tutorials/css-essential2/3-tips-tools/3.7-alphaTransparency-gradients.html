@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Transparency and Gradients</title>
+    <style >
+      .image-bg {
+        width: 400px;
+        font-family: Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+
+        /* sets background image */
+        /*background: url(https://unsplash.it/400/300) no-repeat;*/
+
+        /* sets gradient and image */
+
+        background: linear-gradient(rgba(255, 255, 255, 0.8),
+                      rgba(199, 21, 133, 0.5)),
+                      url(https://unsplash.it/400/700)no-repeat; 
+      }
+
+      .alpha-bg {
+        padding: 20px;
+        height: 100%;
+        /*color: #eee;*/
+
+      /* sets the color with alpha transparency */
+  /*     background: rgba(70, 130, 180, 0.8); */
+
+     }
+    </style>
+
+</head>
+<body>
+  <div class="image-bg">
+    <div class="alpha-bg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</body>
+</html>
