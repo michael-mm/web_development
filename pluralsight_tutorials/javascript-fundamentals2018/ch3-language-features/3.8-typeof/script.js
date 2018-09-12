@@ -1,8 +1,10 @@
-console.log(typeof(1));
-console.log(typeof(true));
-console.log(typeof('Hello'));
-console.log(typeof(function(){}));
-console.log(typeof({}));
-console.log(typeof(undefined));
-console.log(typeof(null));
-console.log(typeof(NaN));
+console.log(typeof(1)); // number
+console.log(typeof(true)); // boolean
+console.log(typeof('Hello')); // string
+console.log(typeof(function(){})); // function
+console.log(typeof({})); // object
+console.log(typeof(undefined)); // undefined
+
+// to be aware of
+console.log(typeof(null)); // object
+console.log(typeof(NaN)); // number
