@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creating Flexible and Fluid Layouts</title>
+  <style>
+    .content-wrap {
+      background: lightblue;
+      padding: 20px;
+      margin: 0 auto;
+      /*width: 400px;*/
+
+      /*when viewport is smaller than the fixed width the content becomes 100% of its container and when larger it max out at 400px*/
+      max-width: 400px;
+
+      /*when the viewport is smaller than 400px it becomes 60% of its container*/
+      /*ensures that content is still relative to container but it doesn't have to default to 100% of its container*/
+      /*width: 60%;*/
+
+      /*if you do not want the content to get too small*/
+      min-width: 200px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="content-wrap">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
+    
+  </div>
+</body>
+</html>
