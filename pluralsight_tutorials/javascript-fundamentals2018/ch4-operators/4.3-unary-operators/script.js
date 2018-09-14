@@ -3,7 +3,7 @@
 // ++ before variable
 
 let yearBefore = 1967;
-console.log(++yearBefore); // 1967
+console.log(++yearBefore); // 1968
 
 // ++ after variable
 
@@ -19,8 +19,8 @@ console.log(yearAfter++); // 1968
 // + converts string to numeric type
 
 let yearConv = '1967';
-console.log(typeof (yearConv));
-console.log(typeof (+yearConv));
+console.log(typeof (yearConv)); // string
+console.log(typeof (+yearConv)); // number
 
 
 // to convert but still negate  variable
