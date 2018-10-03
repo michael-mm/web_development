@@ -1,0 +1,106 @@
+@charset "utf-8";
+nav {
+    background-color: #103F37;
+    position: relative;
+}
+#menulink {
+    margin: 0;
+}
+#menulink a {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-style: normal;
+}
+#menulink a, #navlinks a {
+    display: block;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+    background-color: #103F37;
+    background-color: rgba(16,63,55,0.85);
+    color: #C2C2C2;
+    padding: .4em 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#navlinks {
+    padding: 0px;
+    list-style-type: none;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    -webkit-transition: all ease-out 0.5s;
+    transition: all ease-out 0.5s;
+}
+#navlinks.displayed {
+    top: 57px;
+    z-index: 1;
+    opacity: 1;
+}
+#navlinks.start {
+    display: none;
+}
+#navlinks.collapsed {
+    top: -15em;
+    opacity: 0;
+}
+#navlinks li {
+    margin: 0px;
+}
+#navlinks a:visited {
+    color: #C2C2C2;
+}
+#navlinks a:hover, #navlinks a:active, #navlinks a:focus {
+    color: white;
+}
+#navlinks a.current, #navlinks a.current:visited {
+    color: white;
+    background-color: #df4848;
+}
+
+@media screen and (min-width:680px) {
+#menulink {
+    display: none;
+}
+#navlinks {
+    max-width: 960px;
+    position: static;
+}
+#navlinks.collapsed {
+    opacity: 1;
+}
+#navlinks {
+    height: 2.4em;
+}
+#navlinks a {
+    width: 16.66%;
+    float: left;
+}
+}
+
+@media (min-width: 900px) {
+#navlinks a {
+    background-image: url(../images/icons.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+#navlinks a[href="index.html"] {
+    background-image: none;
+}
+#navlinks a[href="rooms.html"] {
+    background-position: left top;
+}
+#navlinks a[href="info.html"] {
+    background-position: left -30px;
+}
+#navlinks a[href="dining.html"] {
+    background-position: left -60px;
+}
+#navlinks a[href="events.html"] {
+    background-position: left -90px;
+}
+#navlinks a[href="attractions.html"] {
+    background-position: left -122px;
+}
+}

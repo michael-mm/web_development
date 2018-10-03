@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+#greenprogram {
+	font-size: 1.5em;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	margin: 1px auto 1em;
+	padding: 1.9em;
+	border-radius: 22px 10px 10px;
+	width: 98%;
+	background-color: #2F786D;
+	color: white;
+	font-weight: bold;
+}	
