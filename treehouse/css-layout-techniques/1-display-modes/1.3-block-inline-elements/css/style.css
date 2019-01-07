@@ -1,0 +1,61 @@
+
+/* Page Styles
+================================ */
+
+body {
+	font: normal 1.1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+
+/* More control over our layout*/
+.main-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+/* Layout Element Colors
+================================ */
+
+.main-header       { background-color: #384047; }
+.main-logo         { background-color: #5fcf80; }
+.main-nav li       { background-color: #3f8abf; }
+.primary-content   { background-color: #caebf6; }
+.secondary-content { background-color: #bfe3d0; }
+.main-footer       { background-color: #b7c0c7; }
+
+/* Header, Banner and Footer Layout
+================================ */
+.main-header {
+  padding: 20px;
+  white-space: nowrap;
+}
+
+.main-logo,
+.main-nav, .main-nav li{
+  display: inline; 
+/*  can't give it width and top & bottom margin*/
+}
+
+.main-logo,
+.main-nav li {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.main-nav li {
+  margin-right: 10px;
+}
+
+.main-logo {
+  margin-right: 50px;
+}
+
+.main-logo a, 
+.main-nav a {
+	color: white;
+	text-decoration: none;
+}
+
+
+

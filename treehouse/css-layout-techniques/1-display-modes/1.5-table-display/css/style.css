@@ -1,0 +1,92 @@
+
+/* Page Styles
+================================ */
+
+body {
+	font: normal 1.1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+.main-wrapper {
+	width: 90%;
+	margin: auto;
+}
+* {
+  box-sizing: border-box
+}
+
+/* Layout Element Colors
+================================ */
+
+.main-header       { background-color: #384047; }
+.main-logo         { background-color: #5fcf80; }
+.main-nav li       { background-color: #3f8abf; }
+.primary-content   { background-color: #caebf6; }
+.secondary-content { background-color: #bfe3d0; }
+.main-footer       { background-color: #b7c0c7; }
+
+/* Header, Banner and Footer Layout
+================================ */
+
+.main-header {
+	padding: 20px;
+	min-height: 150px;
+	display: table;
+	width: 100%;
+}
+.main-logo,
+.main-nav,
+.main-nav li {
+	display: inline-block;
+}
+.main-logo,
+.main-nav li {
+	border-radius: 5px;
+}
+.main-logo,
+.main-nav {
+	display: table-cell;
+	vertical-align: middle;
+}
+.main-logo {
+	width: 120px;
+}
+.main-nav {
+	padding-left: 50px;
+}
+.main-nav li {
+	margin-right: 10px;
+	margin-top: 15px;
+}
+.main-logo a, 
+.main-nav a {
+	color: white;
+	text-decoration: none;
+	display: inherit;
+	padding: 5px 15px;
+	text-align: center;
+}
+
+/* Media Queries
+================================ */
+
+@media (max-width: 768px) {
+	.main-logo,
+	.main-nav, 
+	.main-nav li {
+       display: block;
+       width: initial;
+	   margin: initial;
+	}
+	.main-nav {
+		padding-left: initial;
+	}
+	.main-nav li {
+	   margin-left: 0;
+	   margin-top: 15px;
+	}
+}
+
+
+
+
