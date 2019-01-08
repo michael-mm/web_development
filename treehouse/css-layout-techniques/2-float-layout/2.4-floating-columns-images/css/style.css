@@ -1,0 +1,135 @@
+
+/* Page Styles
+================================ */
+
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+ height: 100%;
+}
+body {
+	font: normal 1.1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+
+/* Layout Element Colors
+================================ */
+
+.main-header       { background-color: #384047; }
+.main-logo a       { background-color: #5fcf80; }
+.main-nav a        { background-color: #3f8abf; }
+.primary-content   { background-color: #caebf6; }
+.secondary-content { background-color: #bfe3d0; }
+.main-footer       { background-color: #b7c0c7; }
+
+/* Main Layout Styles
+================================ */
+
+/*
+.main-wrapper {
+	width: 90%;
+	margin: auto;
+}
+*/
+.main-header {
+	padding: 15px;
+}
+.main-logo,
+.main-nav li {
+	float: left;
+}
+.main-logo {
+	margin: 0 50px 0 0;
+}
+.main-nav li {
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.main-logo a, 
+.main-nav a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.main-banner {
+	background: #dfe2e4;
+	text-align: center;
+	padding: 35px 15px;
+}
+.main-footer {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Column Layout
+================================ */
+
+.col {
+	padding: 20px;
+    float: left;
+    width: 30%; 
+}
+
+.primary-content {
+    width: 40%;
+}
+
+.col:last:child {
+    float: right;
+}
+
+/* Float Clearfix
+================================ */
+
+.group:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* Imagery
+================================ */
+.feat-img {
+  width: 50%;
+  float: left;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  border: solid 1px;
+  padding: 5px;
+}
+
+
+/* Media Queries
+================================ */
+
+@media (max-width: 768px) {
+	.main-wrapper,
+	.main-nav li, 
+	.main-logo,
+    .col,
+    .feat-img {
+		width: initial;
+		height: initial;
+		float: initial;
+	}
+  
+  .feat-img {
+    width: 100%
+  }
+	.main-logo {
+		margin-right: 0;
+	}
+	.extra-content {
+		display: none;
+	}
+}
+
