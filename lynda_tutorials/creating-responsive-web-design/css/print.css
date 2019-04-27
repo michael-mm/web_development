@@ -1,0 +1,134 @@
+/* CSS Document for Print */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300);
+
+@page { margin: .5cm; }
+
+body {
+	color: #000;
+	font-family: Georgia, "Times New Roman", Times, serif; font-size: 12pt;
+	font-weight: normal; margin: 0; padding: 0;
+}
+
+h1, h2, h3, h4 { margin: 0; font-family: "Open Sans", sans-serif; }
+
+h1 { font-size: 1.4em; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1.1em; }
+
+p { margin: 0 0 1em 0; font-size: .9em; }
+
+a, a:visited { color: inherit; text-decoration: none; }
+
+a::after, a:visited::after {
+	content: ' (' attr(href) ')';
+	font-style: italic;
+	word-wrap: break-word;
+}
+
+nav { display: none; }
+
+header { position: relative; }
+
+header::after { content: url(../images/banner_1300_print.jpg); width: 90%; }
+
+header a.logo { display: block; width: 145px; height: 60px; position: absolute; top: 20px; left: 20px; }
+
+header a.logo::before { content: url(../images/logo_print.svg); }
+
+header a.logo::after { display: block; position: absolute; top: 20px; left: 175px; }
+
+header a.logo span { display: none; }
+
+header div.hero { width: 75%; position: absolute; top: 110px; left: 20px; }
+
+header div.hero a::after { display: block; }
+
+section { margin-bottom: 50px;  }
+
+section::after { content: ''; display: block; clear: both; }
+
+section.main { margin-top: 20px; margin-bottom: 30px; }
+
+section.main aside { width: 33%; float: left; text-align: center; }
+
+section.main aside div.content { margin: 15px; }
+
+section.main aside div.content h3 a::after { display: block; font-family: serif; font-weight: normal; }
+
+section.main aside div.content.trending::before { content: url(../images/icon_star_print.svg); }
+
+section.main aside div.content.find-it::before { content: url(../images/icon_marker_print.svg); }
+
+section.main aside div.content.tools::before { content: url(../images/icon_gear_print.svg); }
+
+section.atmosphere { position: relative; margin-bottom: 40px; padding-top: 50px; border-top: 1px solid #ccc; }
+
+section.atmosphere::before { content: url(../images/photo_lounge_print.jpg); }
+
+section.atmosphere article { width: 40%; position: absolute; top: 40px; left: 425px; }
+
+
+section.how-to { padding-top: 50px; border-top: 1px solid #ccc; page-break-inside: avoid; }
+
+section.how-to aside { width: 25%; float: left; margin: 0 35px 0 0; }
+
+section.how-to div.content img { display: none; }
+
+section.how-to aside:nth-child(1) div.content::before { content: url(../images/photo_seating_print.jpg); }
+
+section.how-to aside:nth-child(2) div.content::before { content: url(../images/photo_lighting_print.jpg); }
+
+section.how-to blockquote {
+	width: 30%;
+	float: left;
+	margin-left: 30px;
+	position: relative;
+}
+
+section.how-to blockquote::before {
+	content:'\201c';
+	color: #ccc;
+	font-size: 5em;
+	font-family: serif;
+	display: inline-block;
+	position: absolute;
+	top: -20px;
+	left: -45px;
+}
+
+section.how-to blockquote p.quote {
+	font-style: italic;
+	font-size: 1.4em;
+	color: #888;
+}
+
+section.how-to blockquote p.quote::after {
+	content:'\201d'; font-family: serif;
+}
+
+section.how-to blockquote p.credit {
+	padding-left: 20px; position: relative;
+}
+
+section.how-to blockquote p.credit::before {
+	content:'\2014';
+	position: absolute;
+	left: 0px; top: -1px;
+}
+
+footer { border-top: 1px solid #ccc; position: relative; min-height: 200px; padding: 20px 0 0 170px; }
+
+footer::after { content: url(../images/qr_codifydesign.png); position: absolute; top: 20px; left: 0px; }
+
+footer a { display: block; margin-top: 15px; }
+
+footer a::after { display: block; }
+
+footer div.content { padding-left: 20px; }
+
+footer div.content::after { content: 'This page was printed from http://codifydesign.com';
+	display: block; margin-top: 30px; font-style: italic; font-size: .9em;	
+}
+			
