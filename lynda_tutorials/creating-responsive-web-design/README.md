@@ -1,0 +1,1 @@
+Creating a Responsive Web Design explores how to make site structure more readable and efficient on any device by using HTML and CSS to adapt a layout to different screen sizes and orientations. 
