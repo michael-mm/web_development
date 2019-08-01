@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>Chapter 3-5: CSS Special Effects</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-size: 22pt;
+    }
+    h1 {
+      font-size: 115%;
+    }
+    img {
+      border: 4px double black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Washington, D.C.</h1>
+  <p>
+    Eagles are everywhere in Washington, D.C.
+  </p>
+  
+  <div style="text-align: center">
+    <img src="images/eagles1.jpg" width="251" height="200"
+      style="transform: rotate(-20deg) translateX(30px) translateY(35px);
+        clip-path: ellipse(50% 40% at 50% 50%);"
+      alt="silver eagles on a door plate">
+    <img src="images/eagles2.jpg" width="251" height="200"
+      style="clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);"
+      alt="stone eagle on building facing viewer">
+    <img src="images/eagles3.jpg" width="251" height="200"
+      style="transform: rotate(20deg) translateX(-30px) translateY(35px);
+        clip-path: ellipse(50% 40% at 50% 50%);"
+      alt="brass eagle sculpture in center; stone relief eagles on building to left and right">
+  </div>
+
+</body>
+</html>

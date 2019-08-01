@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600">
+  <g transform="translate(100, 100) scale(0.10)">
+<rect fill="#a0a0a0" height="600" width="900" stroke-width="15"
+        stroke="black"/>
+<rect fill="#fff" x="6" y="6" width="888" height="588"/>
+<circle fill="#be0026" cx="450" cy="300" r="180"/>
+</g>
+</svg>
