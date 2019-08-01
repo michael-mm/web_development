@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <title>Chapter 5-2: Auto-numbering Figures with CSS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 1.25em;
+      counter-reset: figureCounter;
+    }
+    figcaption::before {
+      counter-increment: figureCounter;
+      content: "Figure " counter(figureCounter) ": ";
+    }
+    h1 {font-size: 115%;}
+  </style>
+</head>
+
+<body>
+  <h1>Buying a Metro Ticket in Tokyo</h1>
+  <p>
+    <small>Disclaimer: This is entirely fictional. Any resemblance to actual ticket machines
+    in Tokyo or any other city is purely coincidental.</small>
+  </p>
+  
+  <p>
+    Every station on the Tokyo Metro system will have a ticket vending machines. Here’s how to use them:
+  </p>
+
+  <ol>
+    <li>
+      <p>Select the language you wish to use.</p>
+      <figure>
+        <img src="images/step1.png" width="238" height="141"
+          alt="Flags of Japan, US/UK, France, and China/Taiwan with language names in native language"/>
+        <figcaption>Language selection screen</figcaption>
+      </figure>
+    </li>
+
+    <li>
+      <p>Select the type of pass you want. If you are going to be in Tokyo for more than three days, we recommend a weekly pass; the convenience of <em>not</em> having to buy a new
+      ticket every day outweighs the extra cost.</p>
+      <figure>
+        <img src="images/step2.png" width="238" height="141"
+          alt="Prices: Single trip: 100¥, day pass: 500¥, weekly 2200¥, monthly 9800¥"/>
+        <figcaption>Ticket type selection screen</figcaption>
+      </figure>
+    </li>
+
+    <li>
+      <p>Select the number of adult and child tickets you want, using the arrows to
+      increase or decrease the number. Children are people from age 2 to 15; children
+      below the age of 2 ride free.</p>
+      <figure>
+        <img src="images/step3.png" width="238" height="141"
+          alt="Number of adults / children, with plus and minus arrow keys next to number"/>
+        <figcaption>Number of tickets selection screen</figcaption>
+      </figure>
+    </li>
+
+    <li>
+      <p>Finally, insert payment. Coins and bills go in on the left; you may use a debit card or credit card in the slot at the right. Tickets are dispensed in the bin at the bottom of the payment area.</p>
+      <figure>
+        <img src="images/step4.png" width="238" height="141"
+          alt="Coin and bill slots at left, credit card slot at right, hinged box on bottom"/>
+        <figcaption>Ticket machine payment area</figcaption>
+      </figure>
+    </li>
+  </ol>
+  
+
+</body>
+</html>
+<!--
+US flag: Public Domain, https://en.wikipedia.org/w/index.php?curid=33285428
+UK flag: Public Domain, https://en.wikipedia.org/w/index.php?curid=23473560
+Japan flag: Public Domain, https://en.wikipedia.org/w/index.php?curid=33285241
+France flag: Public Domain, https://en.wikipedia.org/w/index.php?curid=33285388
+People’s Republic of China flag: Drawn by User:SKopp, redrawn by User:Denelson83 and User:Zscout370Recode by cs:User:-xfi- (code), User:Shizhao (colors) - Own work, http://www.protocol.gov.hk/flags/eng/n_flag/design.html, Public Domain, https://commons.wikimedia.org/w/index.php?curid=436175
+Republic of China flag: By User:SKopp - [1], Public Domain, https://commons.wikimedia.org/w/index.php?curid=436176
+Subway car by sincrosergio https://openclipart.org/detail/241590/subway-2
+-->
