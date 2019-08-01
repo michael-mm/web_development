@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chapter 4-5 Challenge Exercise</title>
+  <meta charset="utf-8">
+  <!-- remember to put in a <meta name="viewport"...> here -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div style="text-align:center">
+      <!-- 
+        put the arch_face image here. It should take 90% of the viewport,
+        no matter which image is chosen. The images are:
+        images/arch_face1000.jpg, images/arch_face600.jpg, and
+        images/arch_face300.jpg. The number in the file name gives
+        the image width in pixels.  The default image should be images/arch_face600.jpg
+      -->
+      <img src="images/arch_face600.jpg"
+        sizes="90vw"
+        srcset="images/arch_face1000.jpg 1000w,
+          images/arch_face600.jpg 600w,
+          images/arch_face300.jpg 300w"
+        alt="Bricks in arc with stone bust of bearded man looking upwards")>
+
+  </div>
+  
+  <h1>Scenes from Belgium</h1>
+  
+  <p>
+    Here is a closeup of the top of a clock at Mont des Arts (Kunstberg) in Brussels, Belgium.
+  </p>
+  <div>
+    <!--
+      put the clock image here.
+      If the window is less than 500 pixels display images/clock300.jpg
+      If the window is 500 to 800 pixels display images/clock500.jpg
+      otherwise display images/clock800.jpg
+      The default image to use is images/clock500.jpg
+      The number in the file name gives the image width in pixels.
+    -->
+    <img src="images/clock500.jpg"
+      sizes="(max-width: 500px) 300px,
+        (max-width:800px) 500px,
+        800px"
+      srcset="images/clock300.jpg 300w,
+        images/clock500.jpg 500w,
+        images/clock800.jpg 800w"
+      alt="silver sculpture of man in top hat with cane standing next to bell">
+  </div>
+
+</body>
+</html>
+

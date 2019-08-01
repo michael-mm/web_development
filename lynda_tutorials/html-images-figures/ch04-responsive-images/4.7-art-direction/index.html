@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chapter 4-7: The &lt;picture&gt; element</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    body {font-size: 18pt;}
+    h1 {font-size: 115%;}
+  </style>
+</head>
+
+<body>
+  <div style="text-align:center">
+    <picture>
+      <source media="(max-width: 600px)" srcset="images/arch_face300.jpg">
+      <source media="(max-width: 1000px)" srcset="images/arch_face600.jpg">
+      <source srcset="images/arch_face1000.jpg">
+    <img src="images/arch_face600.jpg"
+      alt="Bricks in arc with stone bust of bearded man looking upwards">
+    </picture>
+  </div>
+  
+  <h1>Scenes from Belgium</h1>
+  
+  <p>
+    Here is a closeup of the top of a clock at Mont des Arts (Kunstberg) in Brussels, Belgium.
+  </p>
+  <div>
+    <!--
+      put the clock image here.
+      If the window is less than 500 pixels display images/clock300.jpg
+      If the window is 500 to 800 pixels display images/clock500.jpg
+      otherwise display images/clock800.jpg
+      The default image to use is images/clock500.jpg
+      The number in the file name gives the image width in pixels.
+    -->
+    <img src="images/clock500.jpg"
+      sizes="(max-width: 500px) 300px,
+             (max-width: 800px) 500px,
+             800px"
+      srcset="images/clock300.jpg 300w,
+              images/clock500.jpg 500w,
+              images/clock800.jpg 800w"
+      alt="Silver statue of man in top hat with cane standing next to bell">
+  </div>
+
+</body>
+</html>
+
